@@ -4,6 +4,6 @@ namespace Vehicles.Domain.Motorcycles.Builders;
 
 public interface IMotorcycleBuilder
 {
-    IMotorcycleBuilder MadeBy(string make);
+    IMotorcycleBuilder FabricatedBy(Brands make);
     Motorcycle Build();
 }

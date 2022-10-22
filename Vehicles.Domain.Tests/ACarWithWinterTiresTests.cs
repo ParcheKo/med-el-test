@@ -11,7 +11,7 @@ public class ACarWithWinterTiresTests
     private readonly Car _newBmwCar;
     public ACarWithWinterTiresTests()
     {
-        _newBmwCar = CarFactory.New().FabricatedBy("Toyota").Build();
+        _newBmwCar = CarFactory.New().FabricatedBy(Brands.Toyota).Build();
         _newBmwCar.SwitchTiresTo(WinterTires.WithSpec(2.7F, -10, 1));
     }
 

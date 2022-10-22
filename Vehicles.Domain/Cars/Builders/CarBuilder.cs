@@ -2,9 +2,9 @@
 
 internal class CarBuilder : ICarBuilder
 {
-    private string _make = string.Empty;
+    private Brands _make;
 
-    public ICarBuilder FabricatedBy(string make)
+    public ICarBuilder FabricatedBy(Brands make)
     {
         _make = make;
         return this;

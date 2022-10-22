@@ -1,7 +1,9 @@
-﻿namespace Vehicles.Domain;
+﻿using Vehicles.Domain.Cars;
+
+namespace Vehicles.Domain;
 
 public abstract class Vehicle
 {
-    public abstract string Make { get; }
+    public abstract Brands Make { get; }
     public abstract void Move();
 }

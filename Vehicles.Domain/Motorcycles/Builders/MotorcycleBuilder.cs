@@ -4,9 +4,9 @@ namespace Vehicles.Domain.Motorcycles.Builders;
 
 internal class MotorcycleBuilder : IMotorcycleBuilder
 {
-    private string _make = string.Empty;
+    private Brands _make;
 
-    public IMotorcycleBuilder MadeBy(string make)
+    public IMotorcycleBuilder FabricatedBy(Brands make)
     {
         _make = make;
         return this;

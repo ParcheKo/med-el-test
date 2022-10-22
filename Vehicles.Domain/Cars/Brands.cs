@@ -1,7 +1,8 @@
 ﻿namespace Vehicles.Domain.Cars;
 
-public enum CarBrands
+public enum Brands
 {
     Toyota,
-    Honda
+    Honda,
+    KTM
 }

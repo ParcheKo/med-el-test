@@ -11,7 +11,7 @@ public class ANewCarTests
     private readonly Car _newBmwCar;
     public ANewCarTests()
     {
-        _newBmwCar = CarFactory.New().FabricatedBy("Toyota").Build();
+        _newBmwCar = CarFactory.New().FabricatedBy(Brands.Toyota).Build();
     }
     
     [Fact]
