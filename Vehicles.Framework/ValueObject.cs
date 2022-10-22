@@ -1,4 +1,4 @@
-﻿namespace Vehicles.Domain;
+﻿namespace Vehicles.Framework;
 
 public abstract class ValueObject
 {

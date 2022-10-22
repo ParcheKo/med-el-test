@@ -1,6 +1,4 @@
-﻿using Vehicles.Domain.Cars;
-
-namespace Vehicles.Domain.Motorcycles.Builders;
+﻿namespace Vehicles.Domain.Motorcycles.Builders;
 
 internal class MotorcycleBuilder : IMotorcycleBuilder
 {

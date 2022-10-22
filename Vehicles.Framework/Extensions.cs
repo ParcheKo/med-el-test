@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-
-namespace Vehicles.Domain.Tests.Helpers;
+﻿namespace Vehicles.Framework;
 
 public static class Extensions
 {

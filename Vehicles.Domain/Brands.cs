@@ -1,4 +1,4 @@
-﻿namespace Vehicles.Domain.Cars;
+﻿namespace Vehicles.Domain;
 
 public enum Brands
 {

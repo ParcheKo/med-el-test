@@ -1,4 +1,4 @@
-using Vehicles.Domain.Cars;
+using Vehicles.Framework;
 
 namespace Vehicles.Domain;
 

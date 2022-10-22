@@ -1,5 +1,3 @@
-using Vehicles.Domain.Cars;
-
 namespace Vehicles.Domain.Motorcycles;
 
 public class MotorcycleBrand : Brand

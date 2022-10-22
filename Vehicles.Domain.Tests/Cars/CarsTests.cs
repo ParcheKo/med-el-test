@@ -1,6 +1,5 @@
 ﻿using System;
 using FluentAssertions;
-using Vehicles.Domain.Cars;
 using Vehicles.Domain.Cars.Builders;
 using Xunit;
 
