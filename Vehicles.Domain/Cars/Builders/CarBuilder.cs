@@ -2,17 +2,16 @@
 
 internal class CarBuilder : ICarBuilder
 {
-    private Brands _make;
+    private Brands _brand;
 
     public ICarBuilder FabricatedBy(Brands make)
     {
-        _make = make;
+        _brand = make;
         return this;
     }
 
     public Car Build()
     {
-        var car = new Car(_make);
-        return car;
+        return new Car(CarBrand.Of(_brand));
     }
 }

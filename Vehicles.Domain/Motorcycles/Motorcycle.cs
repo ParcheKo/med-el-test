@@ -1,19 +1,18 @@
 ﻿using System.Diagnostics;
-using Vehicles.Domain.Cars;
 
 namespace Vehicles.Domain.Motorcycles;
 
 public class Motorcycle : Vehicle
 {
-    public Motorcycle(Brands make)
+    public Motorcycle(Brand make)
     {
         Make = make;
     }
 
-    public override Brands Make { get; }
+    public override Brand Make { get; }
 
     public override void Move()
     {
-        Debug.WriteLine($"You are driving a motorcycle from {Make}");
+        Debug.WriteLine($"You are driving a motorcycle from {Make.Name}");
     }
 }

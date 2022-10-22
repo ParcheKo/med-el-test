@@ -4,17 +4,16 @@ namespace Vehicles.Domain.Motorcycles.Builders;
 
 internal class MotorcycleBuilder : IMotorcycleBuilder
 {
-    private Brands _make;
+    private Brands _brand;
 
     public IMotorcycleBuilder FabricatedBy(Brands make)
     {
-        _make = make;
+        _brand = make;
         return this;
     }
 
     public Motorcycle Build()
     {
-        var car = new Motorcycle(_make);
-        return car;
+        return new Motorcycle(MotorcycleBrand.Of(_brand));
     }
 }

@@ -5,9 +5,9 @@ using Vehicles.Domain.Tire;
 
 var car = CarFactory.New().FabricatedBy(Brands.Toyota).Build();
 car.Move();
-car.SwitchTiresTo(WinterTires.WithSpec(2.7F, -10, 1));
+car.SwitchTiresFor(WinterTires.WithSpec(2.7F, -10, 1));
 car.Move();
-car.SwitchTiresTo(SummerTires.WithSpec(2.4F, 40));
+car.SwitchTiresFor(SummerTires.WithSpec(2.4F, 40));
 car.Move();
 
 var motorcycle = MotorcycleFactory.New().FabricatedBy(Brands.Honda).Build();
