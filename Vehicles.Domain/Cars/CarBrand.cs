@@ -22,14 +22,4 @@ public class CarBrand : Brand
     {
         yield return Name;
     }
-
-    public static implicit operator Brands(CarBrand brand)
-    {
-        return Enum.Parse<Brands>(brand.Name);
-    }
-
-    public static implicit operator CarBrand(Brands brand)
-    {
-        return Of(brand);
-    }
 }

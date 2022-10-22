@@ -4,9 +4,9 @@ internal class MotorcycleBuilder : IMotorcycleBuilder
 {
     private Brands _brand;
 
-    public IMotorcycleBuilder FabricatedBy(Brands make)
+    public IMotorcycleBuilder FabricatedBy(Brands brand)
     {
-        _brand = make;
+        _brand = brand;
         return this;
     }
 
