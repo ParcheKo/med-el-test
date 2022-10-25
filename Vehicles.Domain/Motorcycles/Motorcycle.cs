@@ -4,12 +4,10 @@ namespace Vehicles.Domain.Motorcycles;
 
 public class Motorcycle : Vehicle
 {
-    public Motorcycle(Brand make)
+    public Motorcycle(Brand make): base(make)
     {
-        Make = make;
+        
     }
-
-    public override Brand Make { get; }
 
     public override void Move()
     {

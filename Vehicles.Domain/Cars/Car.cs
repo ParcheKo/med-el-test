@@ -8,14 +8,12 @@ public class Car : Vehicle
     private const float DefaultPressure = 2.5F;
     private const int DefaultMaximumTemperature = 50;
 
-    public Car(Brand make)
+    public Car(Brand make): base(make)
     {
-        Make = make;
     }
 
     public Tires Tires { get; private set; } = SummerTires.WithSpec(DefaultPressure, DefaultMaximumTemperature);
 
-    public override Brand Make { get; }
 
     public void SwitchTiresFor(Tires tires)
     {

@@ -2,6 +2,11 @@
 
 public abstract class Vehicle
 {
-    public abstract Brand Make { get; }
+    public Brand Make { get; }
     public abstract void Move();
+
+    protected Vehicle(Brand make)
+    {
+        Make = make;
+    }
 }

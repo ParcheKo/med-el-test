@@ -55,3 +55,4 @@ public abstract class ValueObject
         return !(a == b);
     }
 }
+
